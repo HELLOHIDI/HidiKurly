@@ -1,5 +1,5 @@
 //
-//  HomeTabbarView.swift
+//  HomeNewProductView.swift
 //  HidiKurly
 //
 //  Created by 류희재 on 2023/03/15.
@@ -7,12 +7,9 @@
 
 import UIKit
 
-import SnapKit
-import Then
-
-class HomeTabbarView: UIView {
+class HomeNewProductView: UIView {
     let view = UIView().then {
-        $0.backgroundColor = .red
+        $0.backgroundColor = .yellow
     }
     
     override init(frame: CGRect) {

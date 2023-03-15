@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */; };
+		D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */; };
+		D230CD8D29C18BD6008731C2 /* HomeNewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8C29C18BD6008731C2 /* HomeNewProductViewController.swift */; };
+		D230CD8F29C18BE6008731C2 /* HomeNewProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */; };
 		D2B4F8FE29B7B1CC008D7A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4F8FD29B7B1CC008D7A38 /* AppDelegate.swift */; };
 		D2B4F90029B7B1CC008D7A38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4F8FF29B7B1CC008D7A38 /* SceneDelegate.swift */; };
 		D2B4F90529B7B1CC008D7A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B4F90329B7B1CC008D7A38 /* Main.storyboard */; };
@@ -20,7 +24,7 @@
 		D2B4F92D29B81831008D7A38 /* UITableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4F92C29B81831008D7A38 /* UITableViewHeaderFooterView.swift */; };
 		D2B4F93029B81B10008D7A38 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D2B4F92F29B81B10008D7A38 /* Then */; };
 		D2B4F93329B81B2D008D7A38 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2B4F93229B81B2D008D7A38 /* SnapKit */; };
-		D2CF3E5C29C168D300EAFCC3 /* HomeTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */; };
+		D2CF3E5C29C168D300EAFCC3 /* HomeTopbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5B29C168D300EAFCC3 /* HomeTopbarView.swift */; };
 		D2CF3E5E29C16A0C00EAFCC3 /* SharpTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5D29C16A0C00EAFCC3 /* SharpTabbarView.swift */; };
 		D2CF3E6029C16A2700EAFCC3 /* MenuTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5F29C16A2700EAFCC3 /* MenuTabbarView.swift */; };
 		D2CF3E6229C16A3500EAFCC3 /* MyTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E6129C16A3500EAFCC3 /* MyTabbarView.swift */; };
@@ -29,13 +33,17 @@
 		D2D794FF29BF8E1500F11693 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D794FE29BF8E1500F11693 /* MyTabBarController.swift */; };
 		D2D7950129BF8E2D00F11693 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950029BF8E2D00F11693 /* MenuTabBarController.swift */; };
 		D2D7950329BF8E4200F11693 /* SharpTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950229BF8E4200F11693 /* SharpTabBarController.swift */; };
-		D2D7950529BF8E5A00F11693 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950429BF8E5A00F11693 /* HomeTabBarController.swift */; };
+		D2D7950529BF8E5A00F11693 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950429BF8E5A00F11693 /* HomeViewController.swift */; };
 		D2D7950729BF8E7400F11693 /* KurlyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950629BF8E7400F11693 /* KurlyTabBarController.swift */; };
 		D2D7950929BF8FBB00F11693 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950829BF8FBB00F11693 /* Image.swift */; };
 		D2D7950B29BF923300F11693 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950A29BF923300F11693 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandViewController.swift; sourceTree = "<group>"; };
+		D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandView.swift; sourceTree = "<group>"; };
+		D230CD8C29C18BD6008731C2 /* HomeNewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewProductViewController.swift; sourceTree = "<group>"; };
+		D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewProductView.swift; sourceTree = "<group>"; };
 		D2B4F8FA29B7B1CC008D7A38 /* HidiKurly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HidiKurly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B4F8FD29B7B1CC008D7A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2B4F8FF29B7B1CC008D7A38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +57,7 @@
 		D2B4F92829B817D0008D7A38 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		D2B4F92A29B81810008D7A38 /* UICollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableView.swift; sourceTree = "<group>"; };
 		D2B4F92C29B81831008D7A38 /* UITableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterView.swift; sourceTree = "<group>"; };
-		D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbarView.swift; sourceTree = "<group>"; };
+		D2CF3E5B29C168D300EAFCC3 /* HomeTopbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopbarView.swift; sourceTree = "<group>"; };
 		D2CF3E5D29C16A0C00EAFCC3 /* SharpTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpTabbarView.swift; sourceTree = "<group>"; };
 		D2CF3E5F29C16A2700EAFCC3 /* MenuTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabbarView.swift; sourceTree = "<group>"; };
 		D2CF3E6129C16A3500EAFCC3 /* MyTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabbarView.swift; sourceTree = "<group>"; };
@@ -58,7 +66,7 @@
 		D2D794FE29BF8E1500F11693 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		D2D7950029BF8E2D00F11693 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
 		D2D7950229BF8E4200F11693 /* SharpTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpTabBarController.swift; sourceTree = "<group>"; };
-		D2D7950429BF8E5A00F11693 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		D2D7950429BF8E5A00F11693 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D2D7950629BF8E7400F11693 /* KurlyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KurlyTabBarController.swift; sourceTree = "<group>"; };
 		D2D7950829BF8FBB00F11693 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D2D7950A29BF923300F11693 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D230CD8B29C18BA3008731C2 /* HomeNewProduct */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD8C29C18BD6008731C2 /* HomeNewProductViewController.swift */,
+				D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */,
+			);
+			path = HomeNewProduct;
+			sourceTree = "<group>";
+		};
 		D2B4F8F129B7B1CC008D7A38 = {
 			isa = PBXGroup;
 			children = (
@@ -211,8 +228,10 @@
 		D2B4F91D29B815F6008D7A38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D2D7950429BF8E5A00F11693 /* HomeTabBarController.swift */,
-				D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */,
+				D230CD8B29C18BA3008731C2 /* HomeNewProduct */,
+				D2CF3E6529C18A7F00EAFCC3 /* HomeKurlyRecommand */,
+				D2D7950429BF8E5A00F11693 /* HomeViewController.swift */,
+				D2CF3E5B29C168D300EAFCC3 /* HomeTopbarView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -251,6 +270,15 @@
 				D2CF3E6329C16A5000EAFCC3 /* SearchTabbarView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		D2CF3E6529C18A7F00EAFCC3 /* HomeKurlyRecommand */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */,
+				D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */,
+			);
+			path = HomeKurlyRecommand;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,16 +368,20 @@
 				D2D7950929BF8FBB00F11693 /* Image.swift in Sources */,
 				D2CF3E6229C16A3500EAFCC3 /* MyTabbarView.swift in Sources */,
 				D2B4F92B29B81810008D7A38 /* UICollectionReusableView.swift in Sources */,
+				D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */,
+				D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */,
 				D2CF3E6029C16A2700EAFCC3 /* MenuTabbarView.swift in Sources */,
-				D2D7950529BF8E5A00F11693 /* HomeTabBarController.swift in Sources */,
+				D2D7950529BF8E5A00F11693 /* HomeViewController.swift in Sources */,
 				D2D7950129BF8E2D00F11693 /* MenuTabBarController.swift in Sources */,
 				D2B4F92529B81792008D7A38 /* UITableViewCell+.swift in Sources */,
 				D2B4F8FE29B7B1CC008D7A38 /* AppDelegate.swift in Sources */,
 				D2B4F92929B817D0008D7A38 /* UITextField+.swift in Sources */,
+				D230CD8D29C18BD6008731C2 /* HomeNewProductViewController.swift in Sources */,
 				D2B4F92729B817AC008D7A38 /* UICollectionViewCell+.swift in Sources */,
 				D2CF3E6429C16A5000EAFCC3 /* SearchTabbarView.swift in Sources */,
-				D2CF3E5C29C168D300EAFCC3 /* HomeTabbarView.swift in Sources */,
+				D2CF3E5C29C168D300EAFCC3 /* HomeTopbarView.swift in Sources */,
 				D2D794FD29BF8DDD00F11693 /* SearchTabBarController.swift in Sources */,
+				D230CD8F29C18BE6008731C2 /* HomeNewProductView.swift in Sources */,
 				D2D7950B29BF923300F11693 /* BaseViewController.swift in Sources */,
 				D2B4F90029B7B1CC008D7A38 /* SceneDelegate.swift in Sources */,
 				D2D794FF29BF8E1500F11693 /* MyTabBarController.swift in Sources */,
