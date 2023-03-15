@@ -20,6 +20,11 @@
 		D2B4F92D29B81831008D7A38 /* UITableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4F92C29B81831008D7A38 /* UITableViewHeaderFooterView.swift */; };
 		D2B4F93029B81B10008D7A38 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D2B4F92F29B81B10008D7A38 /* Then */; };
 		D2B4F93329B81B2D008D7A38 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2B4F93229B81B2D008D7A38 /* SnapKit */; };
+		D2CF3E5C29C168D300EAFCC3 /* HomeTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */; };
+		D2CF3E5E29C16A0C00EAFCC3 /* SharpTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5D29C16A0C00EAFCC3 /* SharpTabbarView.swift */; };
+		D2CF3E6029C16A2700EAFCC3 /* MenuTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5F29C16A2700EAFCC3 /* MenuTabbarView.swift */; };
+		D2CF3E6229C16A3500EAFCC3 /* MyTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E6129C16A3500EAFCC3 /* MyTabbarView.swift */; };
+		D2CF3E6429C16A5000EAFCC3 /* SearchTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E6329C16A5000EAFCC3 /* SearchTabbarView.swift */; };
 		D2D794FD29BF8DDD00F11693 /* SearchTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D794FC29BF8DDD00F11693 /* SearchTabBarController.swift */; };
 		D2D794FF29BF8E1500F11693 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D794FE29BF8E1500F11693 /* MyTabBarController.swift */; };
 		D2D7950129BF8E2D00F11693 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950029BF8E2D00F11693 /* MenuTabBarController.swift */; };
@@ -44,6 +49,11 @@
 		D2B4F92829B817D0008D7A38 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		D2B4F92A29B81810008D7A38 /* UICollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableView.swift; sourceTree = "<group>"; };
 		D2B4F92C29B81831008D7A38 /* UITableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbarView.swift; sourceTree = "<group>"; };
+		D2CF3E5D29C16A0C00EAFCC3 /* SharpTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpTabbarView.swift; sourceTree = "<group>"; };
+		D2CF3E5F29C16A2700EAFCC3 /* MenuTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabbarView.swift; sourceTree = "<group>"; };
+		D2CF3E6129C16A3500EAFCC3 /* MyTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabbarView.swift; sourceTree = "<group>"; };
+		D2CF3E6329C16A5000EAFCC3 /* SearchTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabbarView.swift; sourceTree = "<group>"; };
 		D2D794FC29BF8DDD00F11693 /* SearchTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabBarController.swift; sourceTree = "<group>"; };
 		D2D794FE29BF8E1500F11693 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		D2D7950029BF8E2D00F11693 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
@@ -202,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D7950429BF8E5A00F11693 /* HomeTabBarController.swift */,
+				D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -210,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D7950229BF8E4200F11693 /* SharpTabBarController.swift */,
+				D2CF3E5D29C16A0C00EAFCC3 /* SharpTabbarView.swift */,
 			);
 			path = Sharp;
 			sourceTree = "<group>";
@@ -218,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D7950029BF8E2D00F11693 /* MenuTabBarController.swift */,
+				D2CF3E5F29C16A2700EAFCC3 /* MenuTabbarView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -226,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D794FE29BF8E1500F11693 /* MyTabBarController.swift */,
+				D2CF3E6129C16A3500EAFCC3 /* MyTabbarView.swift */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -234,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D794FC29BF8DDD00F11693 /* SearchTabBarController.swift */,
+				D2CF3E6329C16A5000EAFCC3 /* SearchTabbarView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -320,15 +335,20 @@
 				D2D7950329BF8E4200F11693 /* SharpTabBarController.swift in Sources */,
 				D2D7950729BF8E7400F11693 /* KurlyTabBarController.swift in Sources */,
 				D2B4F92D29B81831008D7A38 /* UITableViewHeaderFooterView.swift in Sources */,
+				D2CF3E5E29C16A0C00EAFCC3 /* SharpTabbarView.swift in Sources */,
 				D2B4F92329B8175E008D7A38 /* UIView+.swift in Sources */,
 				D2D7950929BF8FBB00F11693 /* Image.swift in Sources */,
+				D2CF3E6229C16A3500EAFCC3 /* MyTabbarView.swift in Sources */,
 				D2B4F92B29B81810008D7A38 /* UICollectionReusableView.swift in Sources */,
+				D2CF3E6029C16A2700EAFCC3 /* MenuTabbarView.swift in Sources */,
 				D2D7950529BF8E5A00F11693 /* HomeTabBarController.swift in Sources */,
 				D2D7950129BF8E2D00F11693 /* MenuTabBarController.swift in Sources */,
 				D2B4F92529B81792008D7A38 /* UITableViewCell+.swift in Sources */,
 				D2B4F8FE29B7B1CC008D7A38 /* AppDelegate.swift in Sources */,
 				D2B4F92929B817D0008D7A38 /* UITextField+.swift in Sources */,
 				D2B4F92729B817AC008D7A38 /* UICollectionViewCell+.swift in Sources */,
+				D2CF3E6429C16A5000EAFCC3 /* SearchTabbarView.swift in Sources */,
+				D2CF3E5C29C168D300EAFCC3 /* HomeTabbarView.swift in Sources */,
 				D2D794FD29BF8DDD00F11693 /* SearchTabBarController.swift in Sources */,
 				D2D7950B29BF923300F11693 /* BaseViewController.swift in Sources */,
 				D2B4F90029B7B1CC008D7A38 /* SceneDelegate.swift in Sources */,

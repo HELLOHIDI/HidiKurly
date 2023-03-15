@@ -7,4 +7,9 @@
 
 import UIKit
 
-class MyTabBarController: BaseViewController {}
+class MyTabBarController: BaseViewController {
+    let myTabbarView = MyTabbarView()
+    override func loadView() {
+        self.view = myTabbarView
+    }
+}

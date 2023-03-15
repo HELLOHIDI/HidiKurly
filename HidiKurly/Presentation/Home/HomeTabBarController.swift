@@ -7,4 +7,9 @@
 
 import UIKit
 
-class HomeTabBarController: BaseViewController {}
+class HomeTabBarController: BaseViewController {
+    let homeTabbarView = HomeTabbarView()
+    override func loadView() {
+        self.view = homeTabbarView
+    }
+}

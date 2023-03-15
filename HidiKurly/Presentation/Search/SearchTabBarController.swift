@@ -7,4 +7,9 @@
 
 import UIKit
 
-class SearchTabBarController: BaseViewController {}
+class SearchTabBarController: BaseViewController {
+    let searchTabbarView = SearchTabbarView()
+    override func loadView() {
+        self.view = searchTabbarView
+    }
+}

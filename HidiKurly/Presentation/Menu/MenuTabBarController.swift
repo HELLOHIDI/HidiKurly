@@ -7,4 +7,9 @@
 
 import UIKit
 
-class MenuTabBarController: BaseViewController {}
+class MenuTabBarController: BaseViewController {
+    let menuTabbarView = MenuTabbarView()
+    override func loadView() {
+        self.view = menuTabbarView
+    }
+}

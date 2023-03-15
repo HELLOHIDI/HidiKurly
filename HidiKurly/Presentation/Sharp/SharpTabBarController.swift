@@ -7,4 +7,9 @@
 
 import UIKit
 
-class SharpTabBarController: BaseViewController {}
+class SharpTabBarController: BaseViewController {
+    let sharpTabbarView = SharpTabbarView()
+    override func loadView() {
+        self.view = sharpTabbarView
+    }
+}
