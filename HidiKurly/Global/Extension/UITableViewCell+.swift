@@ -1,0 +1,16 @@
+//
+//  UITableViewCell+.swift
+//  HidiKurly
+//
+//  Created by 류희재 on 2023/03/08.
+//
+
+import UIKit
+
+extension UITableViewCell{
+    
+    static var cellIdentifier : String {
+        return String(describing: self)
+    }
+}
+
