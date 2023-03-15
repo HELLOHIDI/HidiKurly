@@ -14,8 +14,18 @@ class HomeViewController: BaseViewController {
     let homeTopbarView = HomeTopbarView()
     let homePageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     let homeKurlyRecommandViewController = HomeKurlyRecommandViewController()
-    let homeNewProductViewController = HomeNewProductViewController()
-    lazy var homeViewControllers = [homeKurlyRecommandViewController,homeNewProductViewController]
+    let homeNewViewController = HomeNewViewController()
+    let homeBestViewController = HomeBestViewController()
+    let homeThriftyShoppingViewController = HomeThritfyShoppingViewController()
+    let homeDiscountViewController = HomeDiscountViewController()
+    
+    lazy var homeViewControllers = [
+        homeKurlyRecommandViewController,
+        homeNewViewController,
+        homeBestViewController,
+        homeThriftyShoppingViewController,
+        homeDiscountViewController
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeNewProductViewController: BaseViewController {
+class HomeNewViewController: BaseViewController {
     
     let homeNewProductView = HomeNewProductView()
     
