@@ -43,6 +43,9 @@
 		D2D7950729BF8E7400F11693 /* KurlyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950629BF8E7400F11693 /* KurlyTabBarController.swift */; };
 		D2D7950929BF8FBB00F11693 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950829BF8FBB00F11693 /* Image.swift */; };
 		D2D7950B29BF923300F11693 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950A29BF923300F11693 /* BaseViewController.swift */; };
+		D2E4C53429C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C53329C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift */; };
+		D2E4C53729C3799E00695B1E /* HomePageTabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C53629C3799E00695B1E /* HomePageTabbarModel.swift */; };
+		D2E4C53929C4131400695B1E /* HomePageTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C53829C4131400695B1E /* HomePageTabbarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +85,9 @@
 		D2D7950629BF8E7400F11693 /* KurlyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KurlyTabBarController.swift; sourceTree = "<group>"; };
 		D2D7950829BF8FBB00F11693 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D2D7950A29BF923300F11693 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D2E4C53329C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabbarCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2E4C53629C3799E00695B1E /* HomePageTabbarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabbarModel.swift; sourceTree = "<group>"; };
+		D2E4C53829C4131400695B1E /* HomePageTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabbarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,7 @@
 		D2B4F91229B7B568008D7A38 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D2E4C53529C3796700695B1E /* Home */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 				D2CF3E6529C18A7F00EAFCC3 /* HomeKurlyRecommand */,
 				D2D7950429BF8E5A00F11693 /* HomeViewController.swift */,
 				D2CF3E5B29C168D300EAFCC3 /* HomeTopbarView.swift */,
+				D2E4C53329C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -321,6 +329,15 @@
 				D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */,
 			);
 			path = HomeKurlyRecommand;
+			sourceTree = "<group>";
+		};
+		D2E4C53529C3796700695B1E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2E4C53629C3799E00695B1E /* HomePageTabbarModel.swift */,
+				D2E4C53829C4131400695B1E /* HomePageTabbarViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E4C53429C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift in Sources */,
 				D230CD9829C19DAB008731C2 /* HomeDiscountViewController.swift in Sources */,
 				D2D7950329BF8E4200F11693 /* SharpTabBarController.swift in Sources */,
 				D230CD9429C19D6E008731C2 /* HomeBestViewController.swift in Sources */,
@@ -413,6 +431,7 @@
 				D230CD9E29C19E23008731C2 /* HomeDiscountView.swift in Sources */,
 				D230CD9A29C19E01008731C2 /* HomeBestView.swift in Sources */,
 				D2CF3E6229C16A3500EAFCC3 /* MyTabbarView.swift in Sources */,
+				D2E4C53929C4131400695B1E /* HomePageTabbarViewModel.swift in Sources */,
 				D2B4F92B29B81810008D7A38 /* UICollectionReusableView.swift in Sources */,
 				D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */,
 				D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */,
@@ -433,6 +452,7 @@
 				D2D7950B29BF923300F11693 /* BaseViewController.swift in Sources */,
 				D2B4F90029B7B1CC008D7A38 /* SceneDelegate.swift in Sources */,
 				D2D794FF29BF8E1500F11693 /* MyTabBarController.swift in Sources */,
+				D2E4C53729C3799E00695B1E /* HomePageTabbarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

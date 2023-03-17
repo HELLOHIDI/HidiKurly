@@ -11,6 +11,8 @@ import SnapKit
 
 class HomeViewController: BaseViewController {
     
+    private let homePageTabbarViewModel: HomePageTabbarViewModel
+    
     let homeTopbarView = HomeTopbarView()
     let homePageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     let homeKurlyRecommandViewController = HomeKurlyRecommandViewController()
@@ -26,6 +28,15 @@ class HomeViewController: BaseViewController {
         homeThriftyShoppingViewController,
         homeDiscountViewController
     ]
+    
+    init(homePageTabbarViewModel: HomePageTabbarViewModel) {
+        self.homePageTabbarViewModel = homePageTabbarViewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +58,7 @@ class HomeViewController: BaseViewController {
         homeTopbarView.snp.makeConstraints {
             $0.top.equalToSuperview()
             $0.width.equalToSuperview()
-            $0.height.equalTo(100)
+            $0.height.equalTo(150)
         }
         
         homePageViewController.view.snp.makeConstraints {
@@ -58,6 +69,9 @@ class HomeViewController: BaseViewController {
     }
     
     func register() {
+        homeTopbarView.homePageTabbarCollectionView.delegate = self
+        homeTopbarView.homePageTabbarCollectionView.dataSource = self
+        
         homePageViewController.delegate = self
         homePageViewController.dataSource = self
     }
@@ -71,7 +85,6 @@ class HomeViewController: BaseViewController {
                 completion: nil
             )
         }
-        
     }
 }
 
@@ -97,7 +110,53 @@ extension HomeViewController: UIPageViewControllerDataSource {
     }
 }
 
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            return CGSize(width: UIScreen.main.bounds.width / 6, height: 50)
+    }
+}
 
 
 
+extension HomeViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return homePageTabbarViewModel.homePageTabbarList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: HomePageTabbarCollectionViewCell.cellIdentifier,
+            for: indexPath) as? HomePageTabbarCollectionViewCell else { return UICollectionViewCell() }
+        
+        cell.delegate = self
+        cell.titleButton.tag = indexPath.item
+        cell.titleButton.setTitle(
+            homePageTabbarViewModel.homePageTabbarList[indexPath.item].title,
+            for: .normal
+        )
+        cell.underLineView.tag = indexPath.item
+        
+        if self.homePageTabbarViewModel.homePageTabbarList[indexPath.item].isSelected {
+            cell.titleButton.setTitleColor(.purple, for: .normal)
+            cell.underLineView.backgroundColor = .purple
+        } else {
+            cell.titleButton.setTitleColor(.black, for: .normal)
+            cell.underLineView.backgroundColor = .black
+        }
+        
+        cell.homePageTabbarViewModel.updatePageViewControllerClosuer = {
+            self.homePageTabbarViewModel.updatePageViewControllerState()
+            self.homeTopbarView.homePageTabbarCollectionView.reloadData()
+        }
+        
+        return cell
+    }
+}
 
+extension HomeViewController: TitleButtonTappedDelegate {
+    func titleButtonTapped(tag: Int) {
+        homePageTabbarViewModel.index = tag
+        print(tag)
+        homeTopbarView.homePageTabbarCollectionView.reloadData()
+    }
+}
