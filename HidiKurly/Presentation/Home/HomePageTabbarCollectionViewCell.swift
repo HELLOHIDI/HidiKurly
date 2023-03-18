@@ -35,6 +35,10 @@ class HomePageTabbarCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func prepareForReuse() {
+        configCellUI()
+    }
+    
     func target() {
         titleButton.addTarget(self, action: #selector(titleButtonDidTap), for: .touchUpInside)
     }
@@ -73,5 +77,10 @@ extension HomePageTabbarCollectionViewCell {
     @objc func titleButtonDidTap(sender: UIButton) {
         delegate?.titleButtonTapped(tag: sender.tag)
         homePageTabbarViewModel.updatePageViewControllerClosuer?()
+    }
+    
+    func configCellUI() {
+        titleButton.setTitleColor(.black, for: .normal)
+        underLineView.backgroundColor = .black
     }
 }

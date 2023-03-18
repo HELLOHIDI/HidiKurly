@@ -12,7 +12,6 @@ import SnapKit
 class HomeViewController: BaseViewController {
     
     private let homePageTabbarViewModel: HomePageTabbarViewModel
-    
     let homeTopbarView = HomeTopbarView()
     let homePageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     let homeKurlyRecommandViewController = HomeKurlyRecommandViewController()
@@ -99,7 +98,6 @@ extension HomeViewController: UIPageViewControllerDataSource {
         return homeViewControllers[previousIndex]
     }
     
-    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let index = homeViewControllers.firstIndex(of: viewController as! BaseViewController) else { return nil }
         let nextIndex = index + 1
@@ -108,15 +106,22 @@ extension HomeViewController: UIPageViewControllerDataSource {
         }
         return homeViewControllers[nextIndex]
     }
-}
-
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: UIScreen.main.bounds.width / 6, height: 50)
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            guard let index =  homeViewControllers.firstIndex(of: homePageViewController.viewControllers?.first as! BaseViewController) else { return }
+            self.homePageTabbarViewModel.updatePageTabbarViewState(index: index)
+            self.homeTopbarView.homePageTabbarCollectionView.reloadData()
+        }
     }
 }
 
 
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width / 6, height: 50)
+    }
+}
 
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -146,17 +151,21 @@ extension HomeViewController: UICollectionViewDataSource {
         
         cell.homePageTabbarViewModel.updatePageViewControllerClosuer = {
             self.homePageTabbarViewModel.updatePageViewControllerState()
+            self.homePageViewController.setViewControllers(
+                [self.homeViewControllers[self.homePageTabbarViewModel.tabbarIndex]],
+                direction: self.homePageTabbarViewModel.checkDirection(),
+                animated: true,
+                completion: nil
+            )
             self.homeTopbarView.homePageTabbarCollectionView.reloadData()
         }
-        
         return cell
     }
 }
 
 extension HomeViewController: TitleButtonTappedDelegate {
     func titleButtonTapped(tag: Int) {
-        homePageTabbarViewModel.index = tag
-        print(tag)
+        homePageTabbarViewModel.tabbarIndex = tag
         homeTopbarView.homePageTabbarCollectionView.reloadData()
     }
 }
