@@ -43,7 +43,7 @@ extension KurlyTabbarController : UITabBarControllerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let homeTabbarController = HomeTabBarController()
+        let homeTabbarController = HomeViewController(homePageTabbarViewModel: HomePageTabbarViewModel())
         let homeNavigationController =  UINavigationController(rootViewController: homeTabbarController)
         homeNavigationController.navigationBar.isHidden = true
         

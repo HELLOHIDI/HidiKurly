@@ -22,5 +22,9 @@ public enum Image{
     static let menuFill = UIImage(named: "menu.fill")!
     static let searchFill = UIImage(named: "search.fill")!
     static let myFill = UIImage(named: "my.fill")!
+    
+    // Home
+    
+    static let homeLogo = UIImage(named: "homeLogo")!
 }
 

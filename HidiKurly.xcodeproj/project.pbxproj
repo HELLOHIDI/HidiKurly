@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */; };
+		D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */; };
+		D230CD8D29C18BD6008731C2 /* HomeNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */; };
+		D230CD8F29C18BE6008731C2 /* HomeNewProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */; };
+		D230CD9429C19D6E008731C2 /* HomeBestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD9329C19D6E008731C2 /* HomeBestViewController.swift */; };
+		D230CD9629C19D94008731C2 /* HomeThritfyShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD9529C19D94008731C2 /* HomeThritfyShoppingViewController.swift */; };
+		D230CD9829C19DAB008731C2 /* HomeDiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD9729C19DAB008731C2 /* HomeDiscountViewController.swift */; };
+		D230CD9A29C19E01008731C2 /* HomeBestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD9929C19E01008731C2 /* HomeBestView.swift */; };
+		D230CD9C29C19E14008731C2 /* HomeThriftyShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD9B29C19E14008731C2 /* HomeThriftyShoppingView.swift */; };
+		D230CD9E29C19E23008731C2 /* HomeDiscountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD9D29C19E23008731C2 /* HomeDiscountView.swift */; };
 		D2B4F8FE29B7B1CC008D7A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4F8FD29B7B1CC008D7A38 /* AppDelegate.swift */; };
 		D2B4F90029B7B1CC008D7A38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4F8FF29B7B1CC008D7A38 /* SceneDelegate.swift */; };
 		D2B4F90529B7B1CC008D7A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B4F90329B7B1CC008D7A38 /* Main.storyboard */; };
@@ -20,7 +30,7 @@
 		D2B4F92D29B81831008D7A38 /* UITableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4F92C29B81831008D7A38 /* UITableViewHeaderFooterView.swift */; };
 		D2B4F93029B81B10008D7A38 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D2B4F92F29B81B10008D7A38 /* Then */; };
 		D2B4F93329B81B2D008D7A38 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2B4F93229B81B2D008D7A38 /* SnapKit */; };
-		D2CF3E5C29C168D300EAFCC3 /* HomeTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */; };
+		D2CF3E5C29C168D300EAFCC3 /* HomeTopbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5B29C168D300EAFCC3 /* HomeTopbarView.swift */; };
 		D2CF3E5E29C16A0C00EAFCC3 /* SharpTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5D29C16A0C00EAFCC3 /* SharpTabbarView.swift */; };
 		D2CF3E6029C16A2700EAFCC3 /* MenuTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E5F29C16A2700EAFCC3 /* MenuTabbarView.swift */; };
 		D2CF3E6229C16A3500EAFCC3 /* MyTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF3E6129C16A3500EAFCC3 /* MyTabbarView.swift */; };
@@ -29,13 +39,26 @@
 		D2D794FF29BF8E1500F11693 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D794FE29BF8E1500F11693 /* MyTabBarController.swift */; };
 		D2D7950129BF8E2D00F11693 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950029BF8E2D00F11693 /* MenuTabBarController.swift */; };
 		D2D7950329BF8E4200F11693 /* SharpTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950229BF8E4200F11693 /* SharpTabBarController.swift */; };
-		D2D7950529BF8E5A00F11693 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950429BF8E5A00F11693 /* HomeTabBarController.swift */; };
+		D2D7950529BF8E5A00F11693 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950429BF8E5A00F11693 /* HomeViewController.swift */; };
 		D2D7950729BF8E7400F11693 /* KurlyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950629BF8E7400F11693 /* KurlyTabBarController.swift */; };
 		D2D7950929BF8FBB00F11693 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950829BF8FBB00F11693 /* Image.swift */; };
 		D2D7950B29BF923300F11693 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7950A29BF923300F11693 /* BaseViewController.swift */; };
+		D2E4C53429C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C53329C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift */; };
+		D2E4C53729C3799E00695B1E /* HomePageTabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C53629C3799E00695B1E /* HomePageTabbarModel.swift */; };
+		D2E4C53929C4131400695B1E /* HomePageTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E4C53829C4131400695B1E /* HomePageTabbarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandViewController.swift; sourceTree = "<group>"; };
+		D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandView.swift; sourceTree = "<group>"; };
+		D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewViewController.swift; sourceTree = "<group>"; };
+		D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewProductView.swift; sourceTree = "<group>"; };
+		D230CD9329C19D6E008731C2 /* HomeBestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBestViewController.swift; sourceTree = "<group>"; };
+		D230CD9529C19D94008731C2 /* HomeThritfyShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThritfyShoppingViewController.swift; sourceTree = "<group>"; };
+		D230CD9729C19DAB008731C2 /* HomeDiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDiscountViewController.swift; sourceTree = "<group>"; };
+		D230CD9929C19E01008731C2 /* HomeBestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBestView.swift; sourceTree = "<group>"; };
+		D230CD9B29C19E14008731C2 /* HomeThriftyShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThriftyShoppingView.swift; sourceTree = "<group>"; };
+		D230CD9D29C19E23008731C2 /* HomeDiscountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDiscountView.swift; sourceTree = "<group>"; };
 		D2B4F8FA29B7B1CC008D7A38 /* HidiKurly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HidiKurly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B4F8FD29B7B1CC008D7A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2B4F8FF29B7B1CC008D7A38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +72,7 @@
 		D2B4F92829B817D0008D7A38 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		D2B4F92A29B81810008D7A38 /* UICollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionReusableView.swift; sourceTree = "<group>"; };
 		D2B4F92C29B81831008D7A38 /* UITableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewHeaderFooterView.swift; sourceTree = "<group>"; };
-		D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbarView.swift; sourceTree = "<group>"; };
+		D2CF3E5B29C168D300EAFCC3 /* HomeTopbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopbarView.swift; sourceTree = "<group>"; };
 		D2CF3E5D29C16A0C00EAFCC3 /* SharpTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpTabbarView.swift; sourceTree = "<group>"; };
 		D2CF3E5F29C16A2700EAFCC3 /* MenuTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabbarView.swift; sourceTree = "<group>"; };
 		D2CF3E6129C16A3500EAFCC3 /* MyTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabbarView.swift; sourceTree = "<group>"; };
@@ -58,10 +81,13 @@
 		D2D794FE29BF8E1500F11693 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		D2D7950029BF8E2D00F11693 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
 		D2D7950229BF8E4200F11693 /* SharpTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpTabBarController.swift; sourceTree = "<group>"; };
-		D2D7950429BF8E5A00F11693 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		D2D7950429BF8E5A00F11693 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D2D7950629BF8E7400F11693 /* KurlyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KurlyTabBarController.swift; sourceTree = "<group>"; };
 		D2D7950829BF8FBB00F11693 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		D2D7950A29BF923300F11693 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D2E4C53329C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabbarCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2E4C53629C3799E00695B1E /* HomePageTabbarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabbarModel.swift; sourceTree = "<group>"; };
+		D2E4C53829C4131400695B1E /* HomePageTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabbarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +103,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D230CD8B29C18BA3008731C2 /* HomeNewProduct */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */,
+				D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */,
+			);
+			path = HomeNewProduct;
+			sourceTree = "<group>";
+		};
+		D230CD9029C19C4A008731C2 /* HomeBestProduct */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD9329C19D6E008731C2 /* HomeBestViewController.swift */,
+				D230CD9929C19E01008731C2 /* HomeBestView.swift */,
+			);
+			path = HomeBestProduct;
+			sourceTree = "<group>";
+		};
+		D230CD9129C19CD3008731C2 /* HomeThriftyShopping */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD9529C19D94008731C2 /* HomeThritfyShoppingViewController.swift */,
+				D230CD9B29C19E14008731C2 /* HomeThriftyShoppingView.swift */,
+			);
+			path = HomeThriftyShopping;
+			sourceTree = "<group>";
+		};
+		D230CD9229C19D41008731C2 /* HomeDiscountProduct */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD9729C19DAB008731C2 /* HomeDiscountViewController.swift */,
+				D230CD9D29C19E23008731C2 /* HomeDiscountView.swift */,
+			);
+			path = HomeDiscountProduct;
+			sourceTree = "<group>";
+		};
 		D2B4F8F129B7B1CC008D7A38 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +183,7 @@
 		D2B4F91229B7B568008D7A38 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D2E4C53529C3796700695B1E /* Home */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -211,8 +274,14 @@
 		D2B4F91D29B815F6008D7A38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D2D7950429BF8E5A00F11693 /* HomeTabBarController.swift */,
-				D2CF3E5B29C168D300EAFCC3 /* HomeTabbarView.swift */,
+				D230CD9229C19D41008731C2 /* HomeDiscountProduct */,
+				D230CD9129C19CD3008731C2 /* HomeThriftyShopping */,
+				D230CD9029C19C4A008731C2 /* HomeBestProduct */,
+				D230CD8B29C18BA3008731C2 /* HomeNewProduct */,
+				D2CF3E6529C18A7F00EAFCC3 /* HomeKurlyRecommand */,
+				D2D7950429BF8E5A00F11693 /* HomeViewController.swift */,
+				D2CF3E5B29C168D300EAFCC3 /* HomeTopbarView.swift */,
+				D2E4C53329C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -251,6 +320,24 @@
 				D2CF3E6329C16A5000EAFCC3 /* SearchTabbarView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		D2CF3E6529C18A7F00EAFCC3 /* HomeKurlyRecommand */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */,
+				D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */,
+			);
+			path = HomeKurlyRecommand;
+			sourceTree = "<group>";
+		};
+		D2E4C53529C3796700695B1E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2E4C53629C3799E00695B1E /* HomePageTabbarModel.swift */,
+				D2E4C53829C4131400695B1E /* HomePageTabbarViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,27 +419,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E4C53429C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift in Sources */,
+				D230CD9829C19DAB008731C2 /* HomeDiscountViewController.swift in Sources */,
 				D2D7950329BF8E4200F11693 /* SharpTabBarController.swift in Sources */,
+				D230CD9429C19D6E008731C2 /* HomeBestViewController.swift in Sources */,
 				D2D7950729BF8E7400F11693 /* KurlyTabBarController.swift in Sources */,
 				D2B4F92D29B81831008D7A38 /* UITableViewHeaderFooterView.swift in Sources */,
 				D2CF3E5E29C16A0C00EAFCC3 /* SharpTabbarView.swift in Sources */,
 				D2B4F92329B8175E008D7A38 /* UIView+.swift in Sources */,
 				D2D7950929BF8FBB00F11693 /* Image.swift in Sources */,
+				D230CD9E29C19E23008731C2 /* HomeDiscountView.swift in Sources */,
+				D230CD9A29C19E01008731C2 /* HomeBestView.swift in Sources */,
 				D2CF3E6229C16A3500EAFCC3 /* MyTabbarView.swift in Sources */,
+				D2E4C53929C4131400695B1E /* HomePageTabbarViewModel.swift in Sources */,
 				D2B4F92B29B81810008D7A38 /* UICollectionReusableView.swift in Sources */,
+				D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */,
+				D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */,
 				D2CF3E6029C16A2700EAFCC3 /* MenuTabbarView.swift in Sources */,
-				D2D7950529BF8E5A00F11693 /* HomeTabBarController.swift in Sources */,
+				D2D7950529BF8E5A00F11693 /* HomeViewController.swift in Sources */,
 				D2D7950129BF8E2D00F11693 /* MenuTabBarController.swift in Sources */,
 				D2B4F92529B81792008D7A38 /* UITableViewCell+.swift in Sources */,
 				D2B4F8FE29B7B1CC008D7A38 /* AppDelegate.swift in Sources */,
+				D230CD9C29C19E14008731C2 /* HomeThriftyShoppingView.swift in Sources */,
 				D2B4F92929B817D0008D7A38 /* UITextField+.swift in Sources */,
+				D230CD8D29C18BD6008731C2 /* HomeNewViewController.swift in Sources */,
 				D2B4F92729B817AC008D7A38 /* UICollectionViewCell+.swift in Sources */,
 				D2CF3E6429C16A5000EAFCC3 /* SearchTabbarView.swift in Sources */,
-				D2CF3E5C29C168D300EAFCC3 /* HomeTabbarView.swift in Sources */,
+				D2CF3E5C29C168D300EAFCC3 /* HomeTopbarView.swift in Sources */,
 				D2D794FD29BF8DDD00F11693 /* SearchTabBarController.swift in Sources */,
+				D230CD9629C19D94008731C2 /* HomeThritfyShoppingViewController.swift in Sources */,
+				D230CD8F29C18BE6008731C2 /* HomeNewProductView.swift in Sources */,
 				D2D7950B29BF923300F11693 /* BaseViewController.swift in Sources */,
 				D2B4F90029B7B1CC008D7A38 /* SceneDelegate.swift in Sources */,
 				D2D794FF29BF8E1500F11693 /* MyTabBarController.swift in Sources */,
+				D2E4C53729C3799E00695B1E /* HomePageTabbarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
