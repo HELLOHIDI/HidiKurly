@@ -14,6 +14,8 @@ class HomeNewProductView: UIView {
         collectionViewLayout: UICollectionViewFlowLayout()
     )
     
+    public lazy var homeNewStikcyHeaderView = HomeNewStikcyHeaderView()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -51,15 +53,25 @@ class HomeNewProductView: UIView {
             $0.alwaysBounceVertical = true
             $0.backgroundColor = .white
         }
+        
+        homeNewStikcyHeaderView.do {
+            $0.isHidden = false
+        }
     }
     
     private func hierarchy() {
-        self.addSubview(homeNewCollectionView)
+        self.addSubviews(homeNewCollectionView, homeNewStikcyHeaderView)
     }
     
     private func layout() {
         homeNewCollectionView.snp.makeConstraints {
             $0.edges.equalToSuperview()
+        }
+        
+        homeNewStikcyHeaderView.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(40)
         }
     }
 }

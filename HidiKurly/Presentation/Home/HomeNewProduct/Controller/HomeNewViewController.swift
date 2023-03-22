@@ -9,7 +9,7 @@ import UIKit
 
 class HomeNewViewController: BaseViewController {
     
-    private let homeNewProductView = HomeNewProductView()
+    private lazy var homeNewProductView = HomeNewProductView()
     
     override func loadView() {
         self.view = homeNewProductView
@@ -72,5 +72,16 @@ extension HomeNewViewController: UICollectionViewDataSource {
         default:
             return UICollectionViewCell()
         }
+    }
+}
+
+extension HomeNewViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // contentOffset.y: 손가락을 위로 올리면 + 값, 손가락을 아래로 내리면 - 값
+        print(scrollView.contentOffset.y, homeNewProductView.homeNewStikcyHeaderView.frame.minY )
+        
+        // 5. 핵심 - frame.minY를 통해 sticky 타이밍을 계산
+        let shouldShowSticky = scrollView.contentOffset.y >= 500
+        homeNewProductView.homeNewStikcyHeaderView.isHidden = !shouldShowSticky
     }
 }

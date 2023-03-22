@@ -12,6 +12,7 @@
 		D22C785529CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785429CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift */; };
 		D22C785829CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785729CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift */; };
 		D22C785C29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */; };
+		D22C786229CAC4B3007B2C1D /* HomeNewStikcyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C786129CAC4B3007B2C1D /* HomeNewStikcyHeaderView.swift */; };
 		D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */; };
 		D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */; };
 		D230CD8D29C18BD6008731C2 /* HomeNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */; };
@@ -59,6 +60,7 @@
 		D22C785429CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		D22C785729CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewADSectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		D22C786129CAC4B3007B2C1D /* HomeNewStikcyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewStikcyHeaderView.swift; sourceTree = "<group>"; };
 		D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandViewController.swift; sourceTree = "<group>"; };
 		D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandView.swift; sourceTree = "<group>"; };
 		D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewViewController.swift; sourceTree = "<group>"; };
@@ -133,12 +135,29 @@
 			path = SectionCell;
 			sourceTree = "<group>";
 		};
+		D22C785D29CAC41A007B2C1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */,
+				D22C786129CAC4B3007B2C1D /* HomeNewStikcyHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D22C785E29CAC426007B2C1D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D230CD8B29C18BA3008731C2 /* HomeNewProduct */ = {
 			isa = PBXGroup;
 			children = (
+				D22C785E29CAC426007B2C1D /* Controller */,
+				D22C785D29CAC41A007B2C1D /* View */,
 				D22C784F29CA11FC007B2C1D /* Cell */,
-				D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */,
-				D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */,
 			);
 			path = HomeNewProduct;
 			sourceTree = "<group>";
@@ -480,6 +499,7 @@
 				D22C785829CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift in Sources */,
 				D2B4F92729B817AC008D7A38 /* UICollectionViewCell+.swift in Sources */,
 				D2CF3E6429C16A5000EAFCC3 /* SearchTabbarView.swift in Sources */,
+				D22C786229CAC4B3007B2C1D /* HomeNewStikcyHeaderView.swift in Sources */,
 				D2CF3E5C29C168D300EAFCC3 /* HomeTopbarView.swift in Sources */,
 				D2D794FD29BF8DDD00F11693 /* SearchTabBarController.swift in Sources */,
 				D230CD9629C19D94008731C2 /* HomeThritfyShoppingViewController.swift in Sources */,
