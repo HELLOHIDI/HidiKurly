@@ -33,7 +33,7 @@ extension HomeNewViewController: UICollectionViewDelegateFlowLayout {
         case 0:
             return CGSize(width: UIScreen.main.bounds.width, height: 500)
         case 1:
-            return CGSize(width: UIScreen.main.bounds.width, height: 80)
+            return CGSize(width: UIScreen.main.bounds.width, height: 100)
         case 2:
             return CGSize(width: UIScreen.main.bounds.width, height: 1000)
         default:

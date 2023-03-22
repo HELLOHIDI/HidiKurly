@@ -31,7 +31,9 @@ class HomeNewCategoryCollectionViewCell: UICollectionViewCell {
     
     private func style() {
         homeNewCategoryView.do {
-            $0.makeCornerRadius(ratio: 12)
+            $0.layer.borderColor = UIColor.gray.cgColor
+            $0.layer.borderWidth = 1
+            $0.makeCornerRadius(ratio: 15)
         }
         
         homeNewCategoryLabel.do {
@@ -40,22 +42,23 @@ class HomeNewCategoryCollectionViewCell: UICollectionViewCell {
     }
     
     private func hierarchy() {
-        contentView.addSubviews(homeNewCategoryView,homeNewCategoryLabel)
+        contentView.addSubview(homeNewCategoryView)
+        homeNewCategoryView.addSubview(homeNewCategoryLabel)
     }
     
     private func layout() {
         homeNewCategoryView.snp.makeConstraints {
-            $0.top.equalToSuperview()
+            $0.centerY.equalToSuperview()
             $0.centerX.equalToSuperview()
-            $0.width.equalTo(15)
-            $0.height.equalTo(10)
+            $0.width.equalTo(80)
+            $0.height.equalTo(50)
         }
         
         homeNewCategoryLabel.snp.makeConstraints {
-            $0.top.equalTo(self.homeNewCategoryView).offset(3)
             $0.centerX.equalToSuperview()
+            $0.centerY.equalToSuperview()
+            $0.width.equalTo(60)
+            $0.height.equalTo(30)
         }
     }
 }
-    
-

@@ -12,6 +12,9 @@ import Then
 
 class HomeNewCategorySectionCollectionViewCell: UICollectionViewCell {
     
+    private let countLabel = UILabel()
+    private lazy var categoryButton = UIButton()
+    private lazy var filterButton = UIButton()
     private lazy var homeNewCategoryCollectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: UICollectionViewFlowLayout()
@@ -39,32 +42,73 @@ class HomeNewCategorySectionCollectionViewCell: UICollectionViewCell {
     }
     
     private func style() {
+        countLabel.do {
+            $0.text = "총 173개"
+        }
+        
+        categoryButton.do {
+            $0.setTitle("신상품순", for: .normal)
+            $0.setTitleColor(.black, for: .normal)
+        }
+        
+        filterButton.do {
+            $0.setTitle("필터", for: .normal)
+            $0.setTitleColor(.black, for: .normal)
+        }
+        
         homeNewCategoryCollectionView.do {
             let layout = UICollectionViewFlowLayout()
-            layout.scrollDirection = .vertical
+            layout.scrollDirection = .horizontal
             
             $0.isScrollEnabled = true
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.showsHorizontalScrollIndicator = false
             $0.collectionViewLayout = layout
-            $0.backgroundColor = .yellow
+            $0.backgroundColor = .white
         }
     }
     
     private func hierarchy() {
-        self.addSubview(homeNewCategoryCollectionView)
+        self.addSubviews(countLabel,categoryButton, filterButton,homeNewCategoryCollectionView)
     }
     
     private func layout() {
+        countLabel.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.leading.equalToSuperview().offset(15)
+            $0.width.equalTo(70)
+            $0.height.equalTo(40)
+        }
+        
+        categoryButton.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(85)
+            $0.width.equalTo(70)
+            $0.height.equalTo(40)
+        }
+        
+        filterButton.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(15)
+            $0.width.equalTo(70)
+            $0.height.equalTo(40)
+        }
+        
         homeNewCategoryCollectionView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.top.equalTo(self.countLabel.snp.bottom).offset(10)
+            $0.leading.trailing.equalToSuperview().inset(15)
+            $0.bottom.equalToSuperview()
         }
     }
 }
 
 extension HomeNewCategorySectionCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 80, height: 10)
+        return CGSize(width: 80, height: 60)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
 }
 
@@ -78,6 +122,4 @@ extension HomeNewCategorySectionCollectionViewCell: UICollectionViewDataSource {
                 as? HomeNewCategoryCollectionViewCell else { return UICollectionViewCell() }
         return cell
     }
-    
-    
 }

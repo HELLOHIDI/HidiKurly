@@ -44,12 +44,13 @@ class HomeNewProductSectionCollectionViewCell: UICollectionViewCell {
     private func style() {
         homeNewProductCollectionView.do {
             let layout = UICollectionViewFlowLayout()
-            layout.scrollDirection = .horizontal
+            layout.scrollDirection = .vertical
             
+            $0.isScrollEnabled = true
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.showsHorizontalScrollIndicator = false
             $0.collectionViewLayout = layout
-            $0.backgroundColor = .blue
+            $0.backgroundColor = .white
         }
     }
     
@@ -59,14 +60,17 @@ class HomeNewProductSectionCollectionViewCell: UICollectionViewCell {
     
     private func layout() {
         homeNewProductCollectionView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.top.equalToSuperview().offset(15)
+            $0.leading.trailing.equalToSuperview().inset(15)
+            $0.bottom.equalToSuperview()
         }
     }
 }
 
 extension HomeNewProductSectionCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 50, height: 50)
+        let width = (UIScreen.main.bounds.width - 45) / 2
+        return CGSize(width: width, height: 300)
     }
 }
 

@@ -49,7 +49,7 @@ class HomeNewProductView: UIView {
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.showsVerticalScrollIndicator = false
             $0.alwaysBounceVertical = true
-            $0.backgroundColor = .red
+            $0.backgroundColor = .white
         }
     }
     

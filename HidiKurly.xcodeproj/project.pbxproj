@@ -11,7 +11,6 @@
 		D22C785329CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785229CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift */; };
 		D22C785529CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785429CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift */; };
 		D22C785829CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785729CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift */; };
-		D22C785A29CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785929CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift */; };
 		D22C785C29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */; };
 		D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */; };
 		D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */; };
@@ -59,7 +58,6 @@
 		D22C785229CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewCategorySectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		D22C785429CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		D22C785729CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		D22C785929CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewCategoryHeaderView.swift; sourceTree = "<group>"; };
 		D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewADSectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandViewController.swift; sourceTree = "<group>"; };
 		D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandView.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				D22C785629CA9570007B2C1D /* SectionCell */,
 				D22C785429CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift */,
 				D22C785729CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift */,
-				D22C785929CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -129,9 +126,9 @@
 		D22C785629CA9570007B2C1D /* SectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */,
 				D22C785229CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift */,
 				D22C785029CA124B007B2C1D /* HomeNewProductSectionCollectionViewCell.swift */,
-				D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */,
 			);
 			path = SectionCell;
 			sourceTree = "<group>";
@@ -485,7 +482,6 @@
 				D2CF3E6429C16A5000EAFCC3 /* SearchTabbarView.swift in Sources */,
 				D2CF3E5C29C168D300EAFCC3 /* HomeTopbarView.swift in Sources */,
 				D2D794FD29BF8DDD00F11693 /* SearchTabBarController.swift in Sources */,
-				D22C785A29CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift in Sources */,
 				D230CD9629C19D94008731C2 /* HomeThritfyShoppingViewController.swift in Sources */,
 				D22C785129CA124B007B2C1D /* HomeNewProductSectionCollectionViewCell.swift in Sources */,
 				D230CD8F29C18BE6008731C2 /* HomeNewProductView.swift in Sources */,
