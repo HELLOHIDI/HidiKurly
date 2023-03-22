@@ -26,5 +26,6 @@ public enum Image{
     // Home
     
     static let homeLogo = UIImage(named: "homeLogo")!
+    static let homeAD = UIImage(named: "homeAD")!
 }
 

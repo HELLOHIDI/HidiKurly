@@ -44,7 +44,6 @@ class HomeTopbarView: UIView {
     }
     
     private func style() {
-        
         topView.do {
             $0.backgroundColor = .purple
         }

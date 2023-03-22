@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22C785129CA124B007B2C1D /* HomeNewProductSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785029CA124B007B2C1D /* HomeNewProductSectionCollectionViewCell.swift */; };
+		D22C785329CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785229CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift */; };
+		D22C785529CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785429CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift */; };
+		D22C785829CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785729CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift */; };
+		D22C785A29CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785929CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift */; };
+		D22C785C29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */; };
 		D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */; };
 		D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */; };
 		D230CD8D29C18BD6008731C2 /* HomeNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */; };
@@ -49,6 +55,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D22C785029CA124B007B2C1D /* HomeNewProductSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewProductSectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		D22C785229CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewCategorySectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		D22C785429CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		D22C785729CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D22C785929CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewCategoryHeaderView.swift; sourceTree = "<group>"; };
+		D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewADSectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		D230CD8629C18B4D008731C2 /* HomeKurlyRecommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandViewController.swift; sourceTree = "<group>"; };
 		D230CD8929C18B7B008731C2 /* HomeKurlyRecommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKurlyRecommandView.swift; sourceTree = "<group>"; };
 		D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewViewController.swift; sourceTree = "<group>"; };
@@ -103,9 +115,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D22C784F29CA11FC007B2C1D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D22C785629CA9570007B2C1D /* SectionCell */,
+				D22C785429CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift */,
+				D22C785729CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift */,
+				D22C785929CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D22C785629CA9570007B2C1D /* SectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				D22C785229CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift */,
+				D22C785029CA124B007B2C1D /* HomeNewProductSectionCollectionViewCell.swift */,
+				D22C785B29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift */,
+			);
+			path = SectionCell;
+			sourceTree = "<group>";
+		};
 		D230CD8B29C18BA3008731C2 /* HomeNewProduct */ = {
 			isa = PBXGroup;
 			children = (
+				D22C784F29CA11FC007B2C1D /* Cell */,
 				D230CD8C29C18BD6008731C2 /* HomeNewViewController.swift */,
 				D230CD8E29C18BE6008731C2 /* HomeNewProductView.swift */,
 			);
@@ -421,6 +455,7 @@
 			files = (
 				D2E4C53429C1C92F00695B1E /* HomePageTabbarCollectionViewCell.swift in Sources */,
 				D230CD9829C19DAB008731C2 /* HomeDiscountViewController.swift in Sources */,
+				D22C785329CA126D007B2C1D /* HomeNewCategorySectionCollectionViewCell.swift in Sources */,
 				D2D7950329BF8E4200F11693 /* SharpTabBarController.swift in Sources */,
 				D230CD9429C19D6E008731C2 /* HomeBestViewController.swift in Sources */,
 				D2D7950729BF8E7400F11693 /* KurlyTabBarController.swift in Sources */,
@@ -433,6 +468,7 @@
 				D2CF3E6229C16A3500EAFCC3 /* MyTabbarView.swift in Sources */,
 				D2E4C53929C4131400695B1E /* HomePageTabbarViewModel.swift in Sources */,
 				D2B4F92B29B81810008D7A38 /* UICollectionReusableView.swift in Sources */,
+				D22C785C29CA9964007B2C1D /* HomeNewADSectionCollectionViewCell.swift in Sources */,
 				D230CD8729C18B4D008731C2 /* HomeKurlyRecommandViewController.swift in Sources */,
 				D230CD8A29C18B7B008731C2 /* HomeKurlyRecommandView.swift in Sources */,
 				D2CF3E6029C16A2700EAFCC3 /* MenuTabbarView.swift in Sources */,
@@ -440,14 +476,18 @@
 				D2D7950129BF8E2D00F11693 /* MenuTabBarController.swift in Sources */,
 				D2B4F92529B81792008D7A38 /* UITableViewCell+.swift in Sources */,
 				D2B4F8FE29B7B1CC008D7A38 /* AppDelegate.swift in Sources */,
+				D22C785529CA1280007B2C1D /* HomeNewProductCollectionViewCell.swift in Sources */,
 				D230CD9C29C19E14008731C2 /* HomeThriftyShoppingView.swift in Sources */,
 				D2B4F92929B817D0008D7A38 /* UITextField+.swift in Sources */,
 				D230CD8D29C18BD6008731C2 /* HomeNewViewController.swift in Sources */,
+				D22C785829CA9594007B2C1D /* HomeNewCategoryCollectionViewCell.swift in Sources */,
 				D2B4F92729B817AC008D7A38 /* UICollectionViewCell+.swift in Sources */,
 				D2CF3E6429C16A5000EAFCC3 /* SearchTabbarView.swift in Sources */,
 				D2CF3E5C29C168D300EAFCC3 /* HomeTopbarView.swift in Sources */,
 				D2D794FD29BF8DDD00F11693 /* SearchTabBarController.swift in Sources */,
+				D22C785A29CA95A8007B2C1D /* HomeNewCategoryHeaderView.swift in Sources */,
 				D230CD9629C19D94008731C2 /* HomeThritfyShoppingViewController.swift in Sources */,
+				D22C785129CA124B007B2C1D /* HomeNewProductSectionCollectionViewCell.swift in Sources */,
 				D230CD8F29C18BE6008731C2 /* HomeNewProductView.swift in Sources */,
 				D2D7950B29BF923300F11693 /* BaseViewController.swift in Sources */,
 				D2B4F90029B7B1CC008D7A38 /* SceneDelegate.swift in Sources */,

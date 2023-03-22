@@ -8,13 +8,19 @@
 import UIKit
 
 class HomeNewProductView: UIView {
-    let view = UIView().then {
-        $0.backgroundColor = .yellow
-    }
+    
+    public lazy var homeNewCollectionView = UICollectionView(
+        frame: .zero,
+        collectionViewLayout: UICollectionViewFlowLayout()
+    )
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        register()
+        
+        style()
+        hierarchy()
         layout()
     }
     
@@ -22,9 +28,37 @@ class HomeNewProductView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func register() {
+        homeNewCollectionView.register(
+            HomeNewADSectionCollectionViewCell.self,
+            forCellWithReuseIdentifier: HomeNewADSectionCollectionViewCell.cellIdentifier
+        )
+
+        homeNewCollectionView.register(
+            HomeNewCategorySectionCollectionViewCell.self,
+            forCellWithReuseIdentifier: HomeNewCategorySectionCollectionViewCell.cellIdentifier
+        )
+        homeNewCollectionView.register(
+            HomeNewProductSectionCollectionViewCell.self,
+            forCellWithReuseIdentifier: HomeNewProductSectionCollectionViewCell.cellIdentifier
+        )
+    }
+
+    private func style() {
+        homeNewCollectionView.do {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            $0.showsVerticalScrollIndicator = false
+            $0.alwaysBounceVertical = true
+            $0.backgroundColor = .red
+        }
+    }
+    
+    private func hierarchy() {
+        self.addSubview(homeNewCollectionView)
+    }
+    
     private func layout() {
-        addSubview(view)
-        view.snp.makeConstraints {
+        homeNewCollectionView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
     }
