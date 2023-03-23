@@ -62,7 +62,7 @@ class HomeNewProductSectionCollectionViewCell: UICollectionViewCell {
         homeNewProductCollectionView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(15)
             $0.leading.trailing.equalToSuperview().inset(15)
-            $0.bottom.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(10)
         }
     }
 }

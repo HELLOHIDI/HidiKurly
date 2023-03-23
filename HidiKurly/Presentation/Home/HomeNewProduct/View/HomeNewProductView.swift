@@ -52,10 +52,11 @@ class HomeNewProductView: UIView {
             $0.showsVerticalScrollIndicator = false
             $0.alwaysBounceVertical = true
             $0.backgroundColor = .white
+            $0.isScrollEnabled = true
         }
         
         homeNewStikcyHeaderView.do {
-            $0.isHidden = false
+            $0.isHidden = true
         }
     }
     

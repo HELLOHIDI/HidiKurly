@@ -33,9 +33,9 @@ extension HomeNewViewController: UICollectionViewDelegateFlowLayout {
         case 0:
             return CGSize(width: UIScreen.main.bounds.width, height: 500)
         case 1:
-            return CGSize(width: UIScreen.main.bounds.width, height: 100)
+            return CGSize(width: UIScreen.main.bounds.width, height: 110)
         case 2:
-            return CGSize(width: UIScreen.main.bounds.width, height: 1000)
+            return CGSize(width: UIScreen.main.bounds.width, height: 1500)
         default:
             return CGSize(width: 0, height: 0)
         }
@@ -77,9 +77,6 @@ extension HomeNewViewController: UICollectionViewDataSource {
 
 extension HomeNewViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // contentOffset.y: 손가락을 위로 올리면 + 값, 손가락을 아래로 내리면 - 값
-        print(scrollView.contentOffset.y, homeNewProductView.homeNewStikcyHeaderView.frame.minY )
-        
         // 5. 핵심 - frame.minY를 통해 sticky 타이밍을 계산
         let shouldShowSticky = scrollView.contentOffset.y >= 500
         homeNewProductView.homeNewStikcyHeaderView.isHidden = !shouldShowSticky
