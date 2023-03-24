@@ -120,6 +120,7 @@ extension HomeNewCategorySectionCollectionViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeNewCategoryCollectionViewCell.cellIdentifier, for: indexPath)
                 as? HomeNewCategoryCollectionViewCell else { return UICollectionViewCell() }
+        cell.dataBind(index: indexPath.row)
         return cell
     }
 }

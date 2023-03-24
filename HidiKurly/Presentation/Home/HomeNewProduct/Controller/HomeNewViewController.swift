@@ -8,7 +8,6 @@
 import UIKit
 
 class HomeNewViewController: BaseViewController {
-    
     private lazy var homeNewProductView = HomeNewProductView()
     
     override func loadView() {

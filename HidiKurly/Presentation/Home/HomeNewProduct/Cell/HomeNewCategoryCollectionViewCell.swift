@@ -12,8 +12,10 @@ import Then
 
 class HomeNewCategoryCollectionViewCell: UICollectionViewCell {
     
+    private var width: Int = 0
+    
     private lazy var homeNewCategoryView = UIView()
-    private lazy var homeNewCategoryLabel = UILabel()
+    public lazy var homeNewCategoryLabel = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -47,18 +49,27 @@ class HomeNewCategoryCollectionViewCell: UICollectionViewCell {
     }
     
     private func layout() {
+        print(width)
         homeNewCategoryView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.centerX.equalToSuperview()
-            $0.width.equalTo(80)
+            $0.width.equalTo(width)
             $0.height.equalTo(50)
         }
         
         homeNewCategoryLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.centerY.equalToSuperview()
-            $0.width.equalTo(60)
+            $0.width.equalTo(width-20)
             $0.height.equalTo(30)
         }
+    }
+}
+
+extension HomeNewCategoryCollectionViewCell {
+    func dataBind(index: Int) {
+        homeNewCategoryLabel.text = HomeNewCategoryModel.homeNewCategoryData[index].name
+        let viewModel = HomeNewCategoryModel(name: HomeNewCategoryModel.homeNewCategoryData[index].name)
+        width = Int(viewModel.calculateCellWidth(index: index))
     }
 }
